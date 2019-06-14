@@ -1,0 +1,55 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+	<title>login page</title>
+<style>
+body{
+background-image:url("s3.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+}
+#form{
+	background:#BDBDBD;
+	border:#000000 1px;
+	width:28%;
+	margin:100px auto;
+	border-radius:10px;
+	padding:50px;
+
+}
+#btn{
+	color:white;
+	background:#0404B4;
+	padding :5px;
+	margin-left: 69%;
+}
+
+</style>
+	</head>
+
+<body ><br><br><br><br><br><br><br>
+	<div id="form" align="center">
+		
+	<form action="process.php" method="post" enctype="multipart/form-data"> 
+		<fieldset>
+
+			<legend>LOGIN</legend>
+			<p>
+			<label>username</label>
+			<input type="text" name="user" id="user">
+			</p>	
+			<p>
+			<label>password</label>
+			<input type="password" name="pass" id="pass">
+			</p>
+			<p>
+			<input type="submit" id="btn"  value="login" style="width:80px;height:60px">
+			</p>
+<a href="signin.php">sign_in</a>
+		</fieldset>
+	</form> 
+	</div>
+</body>
+</html>
